@@ -2,6 +2,7 @@ import Navbar from "@/components/global/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,11 +14,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="container mx-auto">
+        <nav className="fixed bottom-2 lg:botton-8 w-full overflow-hidden z-50">
           <Navbar />
         </nav>
 
-        <main>{children}</main>
+        
+
+        <main className="h-[100hv-200px]">{children}</main>
       </body>
     </html>
   );

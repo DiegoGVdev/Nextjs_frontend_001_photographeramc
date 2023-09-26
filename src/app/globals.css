@@ -2,3 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-100;; 
+}
+
+@layer components {
+  .focus-nav {
+    @apply  hover:bg-violet-600 hover:rounded-full active:bg-violet-700 active:rounded-full
+    focus:outline-none focus:ring-4 focus:ring-violet-300 focus:rounded-full focus:bg-violet-600;
+  }
+}
