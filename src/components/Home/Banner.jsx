@@ -11,7 +11,7 @@ function Banner() {
           </h1>
           <div className="">
             <span>I am a</span>
-            <h1>Photographer</h1>
+            <h1 className="text-9xl">Photographer</h1>
           </div>
         </div>
 
